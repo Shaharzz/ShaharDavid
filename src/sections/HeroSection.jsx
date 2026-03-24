@@ -8,7 +8,7 @@ function HeroSection() {
       <h1 className="hero-title">
         Hi, I&apos;m{' '}
         <DecryptedText
-          text="Shahar"
+          text="Shahar David"
           animateOn="view"
           sequential
           speed={45}
