@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   color-scheme: dark;
   --bg: #080b14;
@@ -23,7 +27,22 @@ a {
   color: inherit;
 }
 
+.app-root {
+  position: relative;
+  min-height: 100vh;
+}
+
+.app-background {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: auto;
+  opacity: 0.8;
+}
+
 .page-shell {
+  position: relative;
+  z-index: 1;
   width: min(960px, 92vw);
   margin: 0 auto;
   padding: 2rem 0 4rem;
@@ -42,9 +61,50 @@ a {
   margin: 0 0 0.75rem;
 }
 
+.hero-title {
+  margin: 0.4rem 0 0.9rem;
+  font-size: clamp(1.9rem, 4.2vw, 3rem);
+  line-height: 1.15;
+}
+
+.hero-name {
+  color: #e2e8f0;
+  font-weight: 700;
+}
+
+.hero-name-encrypted {
+  color: #60a5fa;
+  opacity: 0.85;
+}
+
 .section p {
   color: var(--muted);
   line-height: 1.6;
+}
+
+.about-layout {
+  display: grid;
+  gap: 1rem;
+  align-items: start;
+}
+
+.about-text {
+  margin: 0;
+}
+
+.about-card-wrap {
+  width: min(100%, 360px);
+}
+
+.about-card-wrap .pc-card {
+  height: min(65svh, 480px);
+}
+
+@media (min-width: 900px) {
+  .about-layout {
+    grid-template-columns: 1.35fr 0.95fr;
+    gap: 1.5rem;
+  }
 }
 
 .grid {
@@ -78,3 +138,13 @@ a {
   margin-top: 0.8rem;
 }
 
+.skills-groups {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.skills-group h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+  color: #cbd5e1;
+}
