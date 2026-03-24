@@ -1,5 +1,6 @@
 import HeroSection from './sections/HeroSection'
 import AboutSection from './sections/AboutSection'
+import EducationSection from './sections/EducationSection'
 import SkillsSection from './sections/SkillsSection'
 import ProjectsSection from './sections/ProjectsSection'
 import ExperienceSection from './sections/ExperienceSection'
@@ -22,6 +23,7 @@ function App() {
       <main className="page-shell">
         <HeroSection />
         <AboutSection />
+        <EducationSection />
         <SkillsSection />
         <ProjectsSection />
         <ExperienceSection />
