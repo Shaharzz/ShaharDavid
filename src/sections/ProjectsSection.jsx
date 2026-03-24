@@ -1,5 +1,3 @@
-import ReactBitsPlaceholder from '../components/reactbits/ReactBitsPlaceholder'
-
 const projects = [
   {
     title: 'Cyber Threat Detection in Email Traffic Using YARA and Suricata',
@@ -46,10 +44,6 @@ function ProjectsSection() {
           </article>
         ))}
       </div>
-      <ReactBitsPlaceholder
-        componentName="Project Cards Grid"
-        description="Suggested: replace this area with a reactbits.dev cards grid or hover-effect cards component."
-      />
     </section>
   )
 }

@@ -1,17 +1,20 @@
-import ReactBitsPlaceholder from '../components/reactbits/ReactBitsPlaceholder'
-
 function ContactSection() {
   return (
     <section className="section" id="contact">
       <h2>Contact</h2>
-      <p>
-        Let&apos;s build something impactful. Reach out at{' '}
-        <a href="mailto:you@example.com">you@example.com</a>.
-      </p>
-      <ReactBitsPlaceholder
-        componentName="Contact Form / CTA"
-        description="Suggested: paste a reactbits.dev form, spotlight button, or magnetic CTA component."
-      />
+      <div className="contact-actions">
+        <a
+          className="contact-btn"
+          href="https://www.linkedin.com/in/shahar-david-a18810106/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn
+        </a>
+        <a className="contact-btn" href="mailto:shahardavid169@gmail.com">
+          Email
+        </a>
+      </div>
     </section>
   )
 }

@@ -1,5 +1,4 @@
 import DecryptedText from '../components/DecryptedText'
-import ReactBitsPlaceholder from '../components/reactbits/ReactBitsPlaceholder'
 
 function HeroSection() {
   return (
@@ -17,14 +16,6 @@ function HeroSection() {
           encryptedClassName="hero-name-encrypted"
         />
       </h1>
-      <p>
-        I design and ship full-stack applications with clean architecture, modern UX,
-        and strong engineering quality.
-      </p>
-      <ReactBitsPlaceholder
-        componentName="Animated Hero / CTA"
-        description="Suggested: paste a hero, animated button, or text reveal component from reactbits.dev."
-      />
     </section>
   )
 }
