@@ -3,8 +3,9 @@ function EducationSection() {
     <section className="section" id="education">
       <h2>Education</h2>
       <p>
-        <strong>2022-2025</strong> B.Sc. in Computer Science | Shamoon College of
-        Engineering
+        <strong>
+          2022-2025 B.Sc. in Computer Science | Shamoon College of Engineering
+        </strong>
       </p>
       <p>
         <strong>Specialization:</strong> Cyber Security and Artifical Intelligence
@@ -18,4 +19,3 @@ function EducationSection() {
 }
 
 export default EducationSection
-

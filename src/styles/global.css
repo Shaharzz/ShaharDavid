@@ -57,6 +57,18 @@ a {
   backdrop-filter: blur(4px);
 }
 
+.section-glow {
+  margin: 0.9rem 0;
+  border-radius: 18px;
+}
+
+.section-glow .section {
+  margin: 0;
+  border-radius: 16px;
+  border-color: rgba(148, 163, 184, 0.26);
+  background: rgba(15, 23, 42, 0.56);
+}
+
 .section h2 {
   margin: 0 0 0.75rem;
 }

@@ -6,6 +6,7 @@ import ProjectsSection from './sections/ProjectsSection'
 import ExperienceSection from './sections/ExperienceSection'
 import ContactSection from './sections/ContactSection'
 import FloatingLines from './components/reactbits/floating-lines/FloatingLines'
+import BorderGlow from './components/reactbits/border-glow/BorderGlow'
 
 function App() {
   return (
@@ -21,13 +22,76 @@ function App() {
       </div>
 
       <main className="page-shell">
-        <HeroSection />
-        <AboutSection />
-        <ProjectsSection />
-        <SkillsSection />
-        <ExperienceSection />
-        <EducationSection />
-        <ContactSection />
+        <BorderGlow
+          className="section-glow"
+          backgroundColor="#0b1220"
+          fillOpacity={0.16}
+          glowRadius={22}
+          glowIntensity={0.72}
+          edgeSensitivity={38}
+        >
+          <HeroSection />
+        </BorderGlow>
+        <BorderGlow
+          className="section-glow"
+          backgroundColor="#0b1220"
+          fillOpacity={0.16}
+          glowRadius={22}
+          glowIntensity={0.72}
+          edgeSensitivity={38}
+        >
+          <AboutSection />
+        </BorderGlow>
+        <BorderGlow
+            className="section-glow"
+            backgroundColor="#0b1220"
+            fillOpacity={0.16}
+            glowRadius={22}
+            glowIntensity={0.72}
+            edgeSensitivity={38}
+        >
+          <EducationSection />
+        </BorderGlow>
+        <BorderGlow
+          className="section-glow"
+          backgroundColor="#0b1220"
+          fillOpacity={0.16}
+          glowRadius={22}
+          glowIntensity={0.72}
+          edgeSensitivity={38}
+        >
+          <ProjectsSection />
+        </BorderGlow>
+        <BorderGlow
+          className="section-glow"
+          backgroundColor="#0b1220"
+          fillOpacity={0.16}
+          glowRadius={22}
+          glowIntensity={0.72}
+          edgeSensitivity={38}
+        >
+          <SkillsSection />
+        </BorderGlow>
+        <BorderGlow
+          className="section-glow"
+          backgroundColor="#0b1220"
+          fillOpacity={0.16}
+          glowRadius={22}
+          glowIntensity={0.72}
+          edgeSensitivity={38}
+        >
+          <ExperienceSection />
+        </BorderGlow>
+        <BorderGlow
+          className="section-glow"
+          backgroundColor="#0b1220"
+          fillOpacity={0.16}
+          glowRadius={22}
+          glowIntensity={0.72}
+          edgeSensitivity={38}
+        >
+          <ContactSection />
+        </BorderGlow>
       </main>
     </div>
   )

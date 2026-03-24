@@ -14,7 +14,7 @@ function HeroSection() {
           text="Shahar David"
           animateOn="view"
           sequential
-          speed={45}
+          speed={85}
           maxIterations={14}
           className="hero-name"
           encryptedClassName="hero-name-encrypted"
