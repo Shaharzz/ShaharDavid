@@ -82,29 +82,8 @@ a {
   line-height: 1.6;
 }
 
-.about-layout {
-  display: grid;
-  gap: 1rem;
-  align-items: start;
-}
-
 .about-text {
   margin: 0;
-}
-
-.about-card-wrap {
-  width: min(100%, 360px);
-}
-
-.about-card-wrap .pc-card {
-  height: min(65svh, 480px);
-}
-
-@media (min-width: 900px) {
-  .about-layout {
-    grid-template-columns: 1.35fr 0.95fr;
-    gap: 1.5rem;
-  }
 }
 
 .grid {

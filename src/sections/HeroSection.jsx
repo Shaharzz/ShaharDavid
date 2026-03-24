@@ -3,7 +3,11 @@ import DecryptedText from '../components/DecryptedText'
 function HeroSection() {
   return (
     <section className="section" id="home">
-      <p className="tag">Software Engineer</p>
+      <div>
+        <span className="tag">Software Engineer</span>
+        <span className="tag">Cybersecurity Researcher</span>
+        <span className="tag">Detection Engineering</span>
+      </div>
       <h1 className="hero-title">
         Hi, I&apos;m{' '}
         <DecryptedText

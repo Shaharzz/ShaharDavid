@@ -23,10 +23,10 @@ function App() {
       <main className="page-shell">
         <HeroSection />
         <AboutSection />
-        <EducationSection />
-        <SkillsSection />
         <ProjectsSection />
+        <SkillsSection />
         <ExperienceSection />
+        <EducationSection />
         <ContactSection />
       </main>
     </div>

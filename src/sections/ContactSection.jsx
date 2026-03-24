@@ -14,6 +14,9 @@ function ContactSection() {
         <a className="contact-btn" href="mailto:shahardavid169@gmail.com">
           Email
         </a>
+        <a className="contact-btn" href="tel:+972509942508">
+          +972509942508
+        </a>
       </div>
     </section>
   )
