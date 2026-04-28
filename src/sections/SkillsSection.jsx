@@ -1,6 +1,6 @@
 const skillCategories = [
 	{
-		title: 'Cybersecurity',
+		title: 'Cybersecurity (Tap/Hover for more) ',
 		skills: [
 			{
 				label: 'Penetration Testing (Kali Linux)',
