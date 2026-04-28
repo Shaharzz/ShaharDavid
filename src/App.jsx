@@ -40,17 +40,17 @@ function App() {
           glowIntensity={0.72}
           edgeSensitivity={38}
         >
-          <AboutSection />
+          <EducationSection />
         </BorderGlow>
         <BorderGlow
-            className="section-glow"
-            backgroundColor="#0b1220"
-            fillOpacity={0.16}
-            glowRadius={22}
-            glowIntensity={0.72}
-            edgeSensitivity={38}
+          className="section-glow"
+          backgroundColor="#0b1220"
+          fillOpacity={0.16}
+          glowRadius={22}
+          glowIntensity={0.72}
+          edgeSensitivity={38}
         >
-          <EducationSection />
+          <AboutSection />
         </BorderGlow>
         <BorderGlow
           className="section-glow"

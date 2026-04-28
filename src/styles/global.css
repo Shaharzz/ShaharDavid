@@ -52,14 +52,16 @@ a {
   background: rgba(17, 24, 39, 0.72);
   border: 1px solid rgba(156, 163, 175, 0.18);
   border-radius: 16px;
-  padding: 1.25rem;
+  padding: 2rem 1.5rem 3rem;
   margin: 1rem 0;
   backdrop-filter: blur(4px);
+  overflow: visible;
 }
 
 .section-glow {
   margin: 0.9rem 0;
   border-radius: 18px;
+  overflow: visible;
 }
 
 .section-glow .section {
@@ -119,6 +121,107 @@ a {
   background: var(--accent-soft);
   color: #e0f2fe;
   font-size: 0.82rem;
+}
+
+.tag-popover-trigger {
+  position: relative;
+  display: inline-flex;
+  gap: 0.35rem;
+  align-items: center;
+  margin: 0.25rem 0.35rem 0 0;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid rgba(56, 189, 248, 0.12);
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: #e0f2fe;
+  font-size: 0.82rem;
+  line-height: 1.2;
+  cursor: pointer;
+  appearance: none;
+  font: inherit;
+  outline: none;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.tag-popover-trigger:hover {
+  background: rgba(56, 189, 248, 0.2);
+  border-color: rgba(125, 211, 252, 0.22);
+}
+
+.tag-popover-trigger:focus-visible {
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.5);
+}
+
+.skill-popover {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.5rem);
+  width: min(280px, 70vw);
+  padding: 0.75rem 0.8rem;
+  border-radius: 14px;
+  border: 1px solid rgba(125, 211, 252, 0.25);
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.98), rgba(17, 24, 39, 0.96));
+  color: #e2e8f0;
+  box-shadow: 0 18px 45px rgba(2, 6, 23, 0.42);
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  z-index: 20;
+  text-align: left;
+  display: none;
+}
+
+.tag-popover-trigger:hover .skill-popover,
+.tag-popover-trigger:focus-visible .skill-popover,
+.tag-popover-trigger:focus-within .skill-popover {
+  transform: translateY(0);
+  pointer-events: auto;
+  display: block;
+}
+
+.skill-popover::before {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  top: -0.35rem;
+  width: 0.65rem;
+  height: 0.65rem;
+  background: rgba(15, 23, 42, 0.98);
+  border-left: 1px solid rgba(125, 211, 252, 0.2);
+  border-top: 1px solid rgba(125, 211, 252, 0.2);
+  transform: rotate(45deg);
+}
+
+.skill-popover-title {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: #7dd3fc;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.skill-popover-line {
+  display: block;
+  color: #cbd5e1;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.skill-popover-line + .skill-popover-line {
+  margin-top: 0.35rem;
+}
+
+.skills-group > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
 }
 
 .reactbits-note {

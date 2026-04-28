@@ -15,7 +15,7 @@ function ContactSection() {
           Email
         </a>
         <a className="contact-btn" href="tel:+972509942508">
-          050-994-2508
+          +972509942508
         </a>
       </div>
     </section>
